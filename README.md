@@ -20,3 +20,6 @@ The above command will set the wallpaper to be black, with white text reading "t
 
 # Pre-compiled
 [Download APK](https://downloads.jamesswinton.com/apks/Utils/WallpaperConfigUtil/Wallpaper%20Config%20Util%20%28v1.0%29.apk)
+
+# Stage Now Barcode
+![enter image description here](https://downloads.jamesswinton.com/apks/Utils/WallpaperConfigUtil/Install%20Wallpaper%20Config%20Util%20Stage%20Now%20Barcode.PNG)
