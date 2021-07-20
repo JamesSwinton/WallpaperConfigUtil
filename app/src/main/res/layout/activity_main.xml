@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+      android:id="@+id/base_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="8dp"
+      android:gravity="center"
+      tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/device_id_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:hint="Device ID Label">
+
+            <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/device_id"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/text_colour_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:hint="Background Colour HEX (EG: #FFFFFF)">
+
+            <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/text_colour"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="#000000"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/background_colour_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:hint="Background Colour HEX (EG: #FFFFFF)">
+
+            <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/background_colour"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="#FFFFFF"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/set_wallpaper"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="SET WALLPAPER" />
+
+    </LinearLayout>
+</layout>
