@@ -3,11 +3,12 @@ package com.zebra.jamesswinton.setdevicenumberutil;
 import android.content.Intent;
 import android.graphics.Color;
 import android.text.TextUtils;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.databinding.DataBindingUtil;
-import com.zebra.jamesswinton.wallpaperconfigutil.databinding.ActivityMainBinding;
+import com.zebra.jamesswinton.setdevicenumberutil.databinding.ActivityMainBinding;
 import java.io.IOException;
 import java.security.InvalidParameterException;
 
@@ -15,11 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
   // Intents
   private static final String SetWallpaperAction = "com.zebra.setdevicenumberutil.SET_WALLPAPER";
-
-  // Extras
   private static final String DeviceIdExtra = "device-id";
   private static final String TextColourExtra = "text-colour";
   private static final String BackgroundColourExtra = "background-colour";
+
+  // Supported Colours
+  private static final String[] SupportedColoursList = new String[] {
+      "WHITE", "BLACK", "GRAY", "DKGRAY", "LTGRAY", "CYAN", "YELLOW", "MAGENTA", "RED", "GREEN", "BLUE"
+  };
 
   // UI
   private ActivityMainBinding mDataBinding;
@@ -28,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     mDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+    // Init Spinners
+    ArrayAdapter colourAdapter = new ArrayAdapter(this,
+        R.layout.support_simple_spinner_dropdown_item, SupportedColoursList);
+    mDataBinding.textColour.setAdapter(colourAdapter);
+    mDataBinding.backgroundColour.setAdapter(colourAdapter);
 
     mDataBinding.setWallpaper.setOnClickListener(v -> {
       if (verifyForm()) {
