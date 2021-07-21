@@ -1,5 +1,9 @@
 
-# Description  
+# Preview
+
+![Preview](https://downloads.jamesswinton.com/apks/Utils/WallpaperConfigUtil/Wallpaper%20%20Config%20Util.gif)
+
+# Description
 Sets device wallpaper based on provided parameters. Parameters can be delivered via UI or Intent. Supports custom background colour, text & text colour & will display text in a playing-card pattern.  
   
 # Intent Formats  
