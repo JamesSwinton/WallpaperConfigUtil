@@ -1,65 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <LinearLayout
-      android:id="@+id/base_layout"
+    <ScrollView
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="vertical"
-      android:layout_margin="8dp"
-      android:gravity="center"
-      tools:context=".MainActivity">
+      android:layout_height="wrap_content">
 
-        <com.google.android.material.textfield.TextInputLayout
-          android:id="@+id/device_id_layout"
+        <LinearLayout
+          android:id="@+id/base_layout"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_marginBottom="8dp"
-          android:hint="Device Number">
+          android:orientation="vertical"
+          android:layout_margin="8dp"
+          android:gravity="center"
+          tools:context=".MainActivity">
 
-            <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/device_id"
+            <TextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="1"/>
+              android:layout_marginBottom="8dp"
+              android:text="Please use the below inputs to configure the device wallpaper. The value entered for device number will be displayed in a play-card style on the device wallpaper. The colour options will colour the text and background colour respectively.  You're free to choose whichever colour combination you deem best, however, research suggests the most accessible colour pairings are: Blue on Orange, Blue on Red and Black on White"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginBottom="8dp"
+              android:background="#9e9e9e"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-          android:id="@+id/text_colour_layout"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginBottom="8dp"
-          android:hint="Device Number Colour">
-
-            <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/text_colour"
+            <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/device_id_layout"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="WHITE"/>
+              android:layout_marginBottom="8dp"
+              android:hint="Device Number">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/device_id"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="1"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-          android:id="@+id/background_colour_layout"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginBottom="8dp"
-          android:hint="Device Background Colour">
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/background_colour"
+            <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+              android:id="@+id/text_colour_layout"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="BLACK"/>
+              android:layout_marginBottom="8dp"
+              android:hint="Select Device Number Text Colour">
 
-        </com.google.android.material.textfield.TextInputLayout>
-        
-        <com.google.android.material.button.MaterialButton
-          android:id="@+id/set_wallpaper"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="SET WALLPAPER" />
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                  android:id="@+id/text_colour"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="none"/>
 
-    </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+              android:id="@+id/background_colour_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+              android:hint="Select Background Colour">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                  android:id="@+id/background_colour"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+              android:id="@+id/set_wallpaper"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="SET WALLPAPER" />
+
+        </LinearLayout>
+
+    </ScrollView>
 </layout>
