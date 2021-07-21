@@ -15,7 +15,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginBottom="8dp"
-          android:hint="Device ID Label">
+          android:hint="Device Number">
 
             <com.google.android.material.textfield.TextInputEditText
               android:id="@+id/device_id"
@@ -30,13 +30,13 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginBottom="8dp"
-          android:hint="Background Colour HEX (EG: #FFFFFF)">
+          android:hint="Device Number Colour">
 
             <com.google.android.material.textfield.TextInputEditText
               android:id="@+id/text_colour"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="#000000"/>
+              android:text="WHITE"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,13 +45,13 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginBottom="8dp"
-          android:hint="Background Colour HEX (EG: #FFFFFF)">
+          android:hint="Device Background Colour">
 
             <com.google.android.material.textfield.TextInputEditText
               android:id="@+id/background_colour"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="#FFFFFF"/>
+              android:text="BLACK"/>
 
         </com.google.android.material.textfield.TextInputLayout>
         
