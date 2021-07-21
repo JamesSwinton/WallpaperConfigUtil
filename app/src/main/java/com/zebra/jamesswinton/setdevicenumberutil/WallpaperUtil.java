@@ -1,16 +1,14 @@
-package com.zebra.jamesswinton.wallpaperconfigutil;
+package com.zebra.jamesswinton.setdevicenumberutil;
 
 import android.app.Activity;
 import android.app.WallpaperManager;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import com.zebra.jamesswinton.wallpaperconfigutil.databinding.LayoutWallpaperBinding;
 import java.io.IOException;
 
 public class WallpaperUtil {

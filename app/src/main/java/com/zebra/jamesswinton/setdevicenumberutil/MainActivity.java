@@ -1,10 +1,8 @@
-package com.zebra.jamesswinton.wallpaperconfigutil;
+package com.zebra.jamesswinton.setdevicenumberutil;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.text.TextUtils;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +14,7 @@ import java.security.InvalidParameterException;
 public class MainActivity extends AppCompatActivity {
 
   // Intents
-  private static final String SetWallpaperAction = "com.zebra.wallpaperconfigutil.SET_WALLPAPER";
+  private static final String SetWallpaperAction = "com.zebra.setdevicenumberutil.SET_WALLPAPER";
 
   // Extras
   private static final String DeviceIdExtra = "device-id";

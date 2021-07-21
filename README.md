@@ -3,7 +3,7 @@
 Sets device wallpaper based on provided parameters. Parameters can be delivered via UI or Intent. Supports custom background colour, text & text colour & will display text in a playing-card pattern.  
   
 # Intent Formats  
-Action: **com.zebra.wallpaperconfigutil.SET_WALLPAPER**
+Action: **com.zebra.setdevicenumberutil.SET_WALLPAPER**
 
 |  Extra | Type | Value |
 |--|--|--|
@@ -13,7 +13,7 @@ Action: **com.zebra.wallpaperconfigutil.SET_WALLPAPER**
   
 # adb example
 ```  
-adb shell am start -a com.zebra.wallpaperconfigutil.SET_WALLPAPER -n com.zebra.jamesswinton.wallpaperconfigutil/.MainActivity --es device-id 'test12345' --es background-colour '#000000' --es text-colour '#ffffff'  
+adb shell am start -a com.zebra.setdevicenumberutil.SET_WALLPAPER -n com.zebra.jamesswinton.setdevicenumberutil/.MainActivity --es device-id 'test12345' --es background-colour '#000000' --es text-colour '#ffffff'
 ```  
   
 The above command will set the wallpaper to be black, with white text reading "test12345" displayed in a play-card like design.

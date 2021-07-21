@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.zebra.jamesswinton.wallpaperconfigutil">
+  package="com.zebra.jamesswinton.setdevicenumberutil">
 
   <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
@@ -11,7 +11,7 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.WallpaperConfigUtil">
-    <activity android:name=".MainActivity">
+    <activity android:name="com.zebra.jamesswinton.setdevicenumberutil.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
